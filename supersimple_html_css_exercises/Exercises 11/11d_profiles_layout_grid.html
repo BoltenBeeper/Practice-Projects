@@ -1,0 +1,109 @@
+<!-- https://www.youtube.com/watch?v=G3e-cpL7ofc&t=14686s -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Profiles</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 10px;
+    }
+
+    p {
+      font-family: roboto, arial;
+      margin: 0px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .profiles-container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 20px;
+    }
+
+    .unique-profile-container {
+      box-shadow: 0px 0px 10px 1px rgba(90, 90, 90, .5);
+    }
+
+    .profile-icon {
+      width: 100%;
+    }
+
+    .user-details-container {
+      padding: 10px;
+    }
+
+    .user-name {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .mutual-friend-count {
+      color: rgb(100, 100, 100);
+      margin-bottom: 10px;
+    }
+
+    .mutual-friend-icon {
+      width: 40px;
+      margin-right: 5px;
+      vertical-align: middle;
+      border-radius: 50px;
+    }
+
+    button.add-friend {
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      background: rgb(56, 118, 233);
+    }
+
+    button.add-friend:hover {
+      background-color: rgb(76, 138, 253);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="profiles-container">
+
+    <div class="unique-profile-container">
+      <img class="profile-icon" src="/Images/BB_Logo.png" style="background-color: black;">
+      <div class="user-details-container">
+        <p class="user-name">BoltenBeeper</p>
+        <p class="mutual-friend-count"><span><img class="mutual-friend-icon" src="/Images/csa_logo.jpg"></span>2 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="unique-profile-container">
+      <img class="profile-icon" src="/Images/Living_Planet.ico" style="background-color: rgb(25, 50, 100);">
+      <div class="user-details-container">
+        <p class="user-name">BiggieMC</p>
+        <p class="mutual-friend-count"><span><img class="mutual-friend-icon" src="/Images/csa_logo.jpg"></span>3 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="unique-profile-container">
+      <img class="profile-icon" src="/Images/Self_Portrait.jpg">
+      <div class="user-details-container">
+        <p class="user-name">Riley</p>
+        <p class="mutual-friend-count"><span><img class="mutual-friend-icon" src="/Images/csa_logo.jpg"></span>4 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
