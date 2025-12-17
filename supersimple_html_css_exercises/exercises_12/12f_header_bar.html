@@ -1,0 +1,73 @@
+<!-- https://youtu.be/G3e-cpL7ofc?t=15314 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Header Bar</title>
+
+    <style>
+      a {
+        margin-left: 10px;
+        color: white;
+        font-family: arial;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      input {
+        height: 30px;
+        width: 100%;
+        max-width: 500px;
+        padding-left: 20px;
+        border: none;
+        border-radius: 30px;
+        font-size: 15px;
+      }
+
+      button {
+        padding: 8px 20px;
+        border: 2px solid white;
+        border-radius: 2px;
+        font-size: 17px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        background-color: #7354ad;
+      }
+
+      .search-bar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 25px;
+        flex: 1;
+      }
+
+      .right-side-container {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav-buttons-container">
+        <a href="#">Home</a>
+      </div>
+
+      <div class="search-bar-container">
+        <input class="search-bar" type="text" placeholder="Search">
+      </div>
+
+      <div class="right-side-container">
+        <button>Download</button>
+      </div>
+    </div>
+  </body>
+</html>

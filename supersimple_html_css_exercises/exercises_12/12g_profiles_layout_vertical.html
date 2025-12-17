@@ -1,0 +1,118 @@
+<!-- https://youtu.be/G3e-cpL7ofc?t=15314 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Layout Vertical</title>
+
+    <style>
+      img {
+        width: 100%;
+        border-radius: 100px;
+      }
+      .profile-list-container {
+        display: grid;
+        grid-template-rows: 75px 75px 75px;
+        row-gap: 5px;
+        width: 375px;
+      }
+
+      .profile {
+        display: grid;
+        grid-template-columns: 75px 1fr 100px;
+      }
+
+      .image-container {
+        display: flex;
+        flex-direction: rows;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .user-summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+      }
+
+      .user-summary > p {
+        margin: 0;
+        font-family: arial;
+      }
+
+      .user-name {
+        font-weight: 600;
+      }
+
+      .bio, .popular {
+        color: grey;
+      }
+
+      .popular {
+        font-size: 14px;
+      }
+
+      .follow-button-container {
+        display: flex;
+        flex-direction: rows;
+        align-items: center;
+      }
+
+      .follow-button-container > button {
+        padding: 8px 11px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        color: white;
+        background-color: #4093f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile-list-container">
+      <div class="profile">
+        <div class="image-container">
+          <img style="background-color: black;" src="/images/BB_Logo.png" alt="BB_Logo">
+        </div>
+        <div class="user-summary">
+          <p class="user-name">BoltenBeeper</p>
+          <p class="bio">The new new</p>
+          <p class="popular">Popular</p>
+        </div>
+        <div class="follow-button-container">
+          <button>Follow</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="image-container">
+          <img style="background-color: rgb(25, 50, 100);" src="/images/Living_Planet.ico" alt="BB_Logo">
+        </div>
+        <div class="user-summary">
+          <p class="user-name">BiggieMC</p>
+          <p class="bio">Just a phase</p>
+          <p class="popular">Popular</p>
+        </div>
+        <div class="follow-button-container">
+          <button>Follow</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="image-container">
+          <img src="/images/Self_Portrait.jpg" alt="BB_Logo">
+        </div>
+        <div class="user-summary">
+          <p class="user-name">Riley</p>
+          <p class="bio">Just me</p>
+          <p class="popular">Popular</p>
+        </div>
+        <div class="follow-button-container">
+          <button>Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
