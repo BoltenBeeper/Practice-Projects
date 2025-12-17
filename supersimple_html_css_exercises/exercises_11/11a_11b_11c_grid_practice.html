@@ -1,0 +1,60 @@
+<!-- https://youtu.be/G3e-cpL7ofc?t=13424 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+
+    <style>
+      p {
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+      }
+
+      .one {
+        grid-template-columns: 200px 75px;
+      }
+
+      .two {
+        grid-template-columns: 50px 1fr 75px;
+      }
+
+      .three {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid one">
+      <p style="background-color: rgb(165, 250, 125)">200px</p>
+      <p style="background-color: rgb(252, 255, 91)">75px</p>
+    </div>
+    
+    <hr>
+    
+    <div class="grid two">
+      <p style="background-color: rgb(165, 250, 125)">50px</p>
+      <p style="background-color: rgb(252, 255, 91)">1fr</p>
+      <p style="background-color: rgb(165, 250, 125)">75px</p>
+    </div>
+    
+    <hr>
+    
+    <div class="grid three">
+      <p style="background-color: rgb(165, 250, 125)">col1</p>
+      <p style="background-color: rgb(252, 255, 91)">col2</p>
+      <p style="background-color: rgb(165, 250, 125)">col3</p>
+      <p style="background-color: rgb(252, 255, 91)">col4</p>
+      <p style="background-color: rgb(252, 255, 91)">col5</p>
+      <p style="background-color: rgb(165, 250, 125)">col6</p>
+      <p style="background-color: rgb(252, 255, 91)">col7</p>
+      <p style="background-color: rgb(165, 250, 125)">col8</p>
+    </div>
+  </body>
+</html>

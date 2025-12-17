@@ -1,0 +1,64 @@
+<!-- https://youtu.be/G3e-cpL7ofc?t=15314 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Design</title>
+
+    <style>
+      p {
+        margin: 0;
+        font-family: arial;
+        font-size: 18px;
+      }
+
+      .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height: 100px;
+        padding: 10px 15px;
+        border: 1px solid rgb(200, 200, 200);
+        border-radius: 10px;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      .label {
+        flex: 1;
+      }
+
+      .count-bubble {
+        margin-right: 10px;
+        padding: 3px 12px;
+        border-radius: 50px;
+        color: white;
+        background-color: #436bef;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="menu-container">
+      <div class="item home">
+        <p class="label">Home</p>
+        <p class="count-bubble">14</p>
+      </div>
+      <div class="item notifications">
+        <p class="label">Notifications</p>
+        <p class="count-bubble">3</p>
+      </div>
+      <div class="item messages">
+        <p class="label">Messages</p>
+        <p class="count-bubble">5</p>
+      </div>
+    </div>
+  </body>
+</html>
